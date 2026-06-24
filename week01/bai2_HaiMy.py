@@ -35,7 +35,6 @@ plt.scatter(coords[:, 0], coords[:, 1], color='red', edgecolors='k', s=100, zord
 
 # Gắn nhãn từng câu
 for i, txt in enumerate(cau):
-    # Để tránh chữ bị đè lên dấu chấm, ta dịch nhẹ tọa độ text qua phải một chút (+0.05)
     plt.annotate(txt, (coords[i, 0], coords[i, 1]), fontsize=10, weight='bold')
 
 plt.title("Visualization", fontsize=14, pad=15)
